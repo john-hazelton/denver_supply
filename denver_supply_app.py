@@ -25,10 +25,6 @@ sm_path = 'data/costar_denver_submarket_demand_supply.csv'
 geo_path = 'data/denver.geojson' 
 
 
-# @st.experimental_rerun()
-# st.rerun()
-@st.cache_data
-
 # Initialize session state for filters
 if 'data_type' not in st.session_state:
     st.session_state.data_type = 'Construction Starts'
@@ -41,6 +37,9 @@ if 'submarket' not in st.session_state:
 
 ##### DEFINE FUNCTIONS TO LOAD, FORMAT, & FILTER DATA #####
 
+# @st.experimental_rerun()
+# st.rerun()
+@st.cache_data
 
 def load_data():    
     # Load property construction data:
