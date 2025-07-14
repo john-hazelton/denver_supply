@@ -27,7 +27,7 @@ geo_path = 'data/denver.geojson'
 
 # @st.experimental_rerun()
 # st.rerun()
-# @st.cache_data
+@st.cache_data
 
 # Initialize session state for filters
 if 'data_type' not in st.session_state:
