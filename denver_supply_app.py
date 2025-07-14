@@ -406,7 +406,8 @@ def main():
             map_obj, 
             width=700, 
             height=700,
-            key="folium_map"
+            key="folium_map",
+            returned_objects=["center", "bounds", "last_object_clicked", "all_drawings"]
             # returned_objects=['last_object_clicked']  # This would prevent interactions like zoom, pan, etc from needlessly triggering reruns
             )
         
@@ -450,7 +451,8 @@ def main():
             map_obj, 
             width=700, 
             height=700,
-            key="folium_map2"
+            key="folium_map2",
+            returned_objects=["center", "bounds", "last_object_clicked", "all_drawings"]
             # returned_objects=['last_object_clicked']  # This would prevent interactions like zoom, pan, etc from needlessly triggering reruns
             )
         
